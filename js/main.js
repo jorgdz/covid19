@@ -19,8 +19,6 @@ const covid19 = {
 		var countRecovered = 0;
 		var timeEC = '';
 
-		console.log(data);
-
 		data.map(elem => {
 			if (elem.confirmed > 0) 
 			{
@@ -40,7 +38,7 @@ const covid19 = {
 							<p><strong>${(elem.provincestate != '') ? elem.provincestate + ' - ' : ''} ${elem.countryregion}</strong></p>
 							<p>Confirmados: ${elem.confirmed} </p>
 							<p>Muertes: ${elem.deaths}</p>
-							<p>Recuperados: ${elem.recovered}</p>
+							${(elem.recovered) ? `<p>Recuperados: ${elem.recovered}</p>` : ''} 
 						</div>
 					`);
 
