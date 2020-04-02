@@ -1,0 +1,17 @@
+body{
+	margin: 0px;
+}
+
+.map {
+	width: 100vw;
+	height: 100vh;
+}
+
+#info{
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+#info h2 {
+	padding: 0px;
+}
